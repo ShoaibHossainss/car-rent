@@ -1,0 +1,477 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Ensure a default font */
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+}
+.navbar img{
+    height: 36px;
+} 
+
+/* Nav Links */
+.nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* banner */
+.banner{
+  display: flex;
+  gap: 20px;
+}
+.banner-text{
+    margin-left: 50px;
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+.banner img{
+  width: 700px;
+}
+.img-2{
+    transform: translateY(-30%); 
+}
+.banner h1{
+    color:#0966EE;
+    font-size: 24px;
+    font-weight: 500;
+}
+.banner h3{
+    color: black;
+    font-size: 60px;
+    font-weight: 700;
+    display: inline;
+}
+
+/* banner btn */
+.banner-btn{
+    display: flex;
+    gap: 10px;
+}
+.btn-1{
+    background-color: #0865F7;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 15px 37px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.btn-2{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 1px;
+    padding: 15px 37px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* info */
+.info{
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.info h2{
+    font-size: 18px;
+}
+
+/* car slider section */
+/* Slider Container */
+.car-section h1{
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+.car-section p{
+    text-align: center;
+}
+.slider-container {
+    position: relative;
+    margin: auto;
+    width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+   
+}
+.bg-circle {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background: linear-gradient(to right, #007bff, #00c6ff); 
+    border-radius: 50%;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    margin-bottom: 100px;
+}
+
+/* Car Images */
+.car-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.main-car {
+    width: 250px;
+    position: relative;
+    z-index: 2;
+}
+
+.side-car {
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+}
+
+.left-car {
+    left: 20px;
+}
+
+.right-car {
+    right: 20px;
+}
+
+/* Car Details */
+.car-details {
+    position: absolute;
+    bottom: 165px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.car-details h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.car-details p {
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+/* Booking Section */
+.booking-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   
+}
+
+.numbers {
+    background: blue;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.book-car {
+    background: royalblue;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.book-car:hover {
+    background: darkblue;
+}
+
+/* Navigation Buttons */
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navigation button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.navigation button:hover {
+    background: grey;
+}
+
+
+/* car-info */
+.car-info{
+    display: flex;
+    gap: 65px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    justify-content: space-around;
+}
+.car-info p{
+    color:#373737;
+
+}
+.car-info img{
+    width: 650px;
+    height: 450px;  
+}
+
+/* book now */
+.book-now{
+    display: flex;
+    background-color:#0264FE;
+    font-weight: 500;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 37px;
+    border: none;
+}
+.prev{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+}
+.next{
+    background-color: white;
+    color: black;
+    border: 0.5px solid #676767;
+    padding: 10px 12px;
+}
+.book-now h1{
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    margin-left: 80px;
+    padding-top: 50px;
+}
+.book-now p{
+    margin-left: 80px;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 80px;
+}
+
+.input {
+    width: 75%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background-color: #fff;
+}
+.input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 90px;
+    font-size: 18px;
+    pointer-events: none;
+}
+.book-btn{
+    color: white;
+    background-color: #0264FE;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    margin-left: 80px;
+    
+}
+
+/* logo section */
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+/* footer section */
+.footer-container{
+    background-color: #2F2F2F;
+    padding-bottom: 15px;
+}
+.footer-items{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+.footer-container h1{
+    color: white;
+}
+.footer-container p{
+    color: white;
+}
+.footer-container a{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+.footer-container li{
+    list-style: none;
+    padding-bottom: 5px;
+    color: white;
+}
+.footer-input{
+    position: relative;
+    padding: 12px;
+}
+.input-btn{
+    background-color: #0264FE;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 63px;
+    padding: 5px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.border-line{
+    border: 1px solid white;
+    width: 85%;
+}
+h3{
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+
+
+
+
+.testimonial-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+/* Media Query */
+@media (max-width: 720px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner img{
+        width: 368px;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .car-section{
+        flex-direction: column;
+    }
+    .slider-container {
+        width: 368px;
+    }
+    .car-info{
+        flex-direction: column;
+    }
+    .car-info img{
+        width: 348px;
+       margin: auto;
+       
+        
+    }
+    .book-now{
+        width: 350px;
+        flex-direction: column;
+        margin: auto;
+      
+    }
+    .logo{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer-container{
+        flex-direction: column;
+        margin: auto;
+        padding: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .footer-items{
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+}
