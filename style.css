@@ -404,6 +404,10 @@ h3{
 
 /* Media Query */
 @media (max-width: 720px) {
+    body{
+        margin: auto;
+        padding: auto;
+    }
     .hamburger {
         display: block;
     }
@@ -429,40 +433,46 @@ h3{
         padding: 10px 0;
     }
     .banner{
+        width: 350px;
         flex-direction: column;
     }
     .banner img{
-        width: 368px;
+        width: 350px;
     }
     .info{
         flex-direction: column;
+        width: 350px;
     }
     .car-section{
         flex-direction: column;
+        width: 330px;
     }
     .slider-container {
-        width: 368px;
+        width: 350px;
     }
     .car-info{
+        width: 350px;
         flex-direction: column;
     }
     .car-info img{
-        width: 348px;
+        width: 320px;
        margin: auto;
        
         
     }
     .book-now{
-        width: 350px;
+        width: 300px;
         flex-direction: column;
         margin: auto;
       
     }
     .logo{
+        width: 320px;
         flex-direction: column;
         gap: 50px;
     }
     .footer-container{
+        width: 350px;
         flex-direction: column;
         margin: auto;
         padding: auto;
@@ -470,6 +480,7 @@ h3{
         align-items: center;
     }
     .footer-items{
+        width: 350px;
         flex-direction: column;
         margin: auto;
         align-items: center;
