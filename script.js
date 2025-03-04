@@ -74,3 +74,15 @@ function updateSlider() {
 
 
 // slider section
+$(document).ready(function(){
+    $('.card-item').slick({
+        infinite: true,   
+        slidesToShow: 3,
+        slidesToScroll: 3, 
+        arrows: true,     
+        dots: true,       
+        autoplay: true,   
+        autoplaySpeed: 2000 
+    });
+});
+

@@ -1,9 +1,9 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif; /* Ensure a default font */
+    margin: auto;
+    padding: auto;
+    font-family: Arial, sans-serif; 
+    width: 1120px;
 }
-
 
 .navbar {
     display: flex;
@@ -16,7 +16,7 @@ body {
     height: 36px;
 } 
 
-/* Nav Links */
+/* nav links */
 .nav-links {
     display: flex;
     gap: 15px;
@@ -29,7 +29,7 @@ body {
     font-size: 16px;
 }
 
-/* Hamburger Menu (Hidden by Default) */
+/* hamburger menu*/
 .hamburger {
     display: none;
     font-size: 24px;
@@ -107,7 +107,6 @@ body {
 }
 
 /* car slider section */
-/* Slider Container */
 .car-section h1{
     font-size: 48px;
     font-weight: 600;
@@ -138,7 +137,7 @@ body {
     margin-bottom: 100px;
 }
 
-/* Car Images */
+/* car images */
 .car-slider {
     position: relative;
     display: flex;
@@ -169,7 +168,7 @@ body {
     right: 20px;
 }
 
-/* Car Details */
+/* car details */
 .car-details {
     position: absolute;
     bottom: 165px;
@@ -188,7 +187,7 @@ body {
     margin: 2px 0;
 }
 
-/* Booking Section */
+/* booking section */
 .booking-section {
     display: flex;
     align-items: center;
@@ -219,7 +218,7 @@ body {
     background: darkblue;
 }
 
-/* Navigation Buttons */
+/* navigation buttons */
 .navigation {
     position: absolute;
     bottom: 10px;
@@ -288,7 +287,7 @@ body {
     font-size: 36px;
     font-weight: 600;
     margin-left: 80px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 .book-now p{
     margin-left: 80px;
@@ -314,9 +313,10 @@ body {
     background-color: #fff;
 }
 .input-icon {
-    position: absolute;
+    color: black;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-8px);
+    transform: translateX(-30px);
     right: 90px;
     font-size: 18px;
     pointer-events: none;
@@ -347,7 +347,8 @@ body {
 }
 .footer-items{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-left: 25px;
     padding-top: 50px;
 }
 .footer-container h1{
@@ -392,21 +393,69 @@ h3{
   color: white;
 }
 
-
-
-
-
 .testimonial-section {
     text-align: center;
     padding: 40px 20px;
+    background-color: #F0F6FF;
+    margin-bottom: 20px;
+}
+/* card styles */
+.card-item{
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+}
+.card {
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    font-family: Arial, sans-serif;
 }
 
+/* card header */
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.card-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: translateX(120px);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.rating {
+    font-size: 14px;
+    color: #ffcc00; 
+}
+.card-body {
+    font-size: 14px;
+    color: #505050;
+}
 
 /* Media Query */
 @media (max-width: 720px) {
     body{
         margin: auto;
         padding: auto;
+        width: 368px;
     }
     .hamburger {
         display: block;
@@ -433,7 +482,6 @@ h3{
         padding: 10px 0;
     }
     .banner{
-        width: 350px;
         flex-direction: column;
     }
     .banner img{
@@ -441,38 +489,44 @@ h3{
     }
     .info{
         flex-direction: column;
-        width: 350px;
     }
+    
     .car-section{
         flex-direction: column;
-        width: 330px;
     }
-    .slider-container {
-        width: 350px;
+    .car-details p{
+        transform: translateY(65px);
     }
+    .car-details h2{
+        transform: translateY(65px);
+    }
+    .slider-container{
+       width: 350px;
+       margin-top: 30px;
+    }
+    .slider-container img{
+        width: 100px;
+      }
+   
     .car-info{
-        width: 350px;
-        flex-direction: column;
-    }
-    .car-info img{
-        width: 320px;
-       margin: auto;
-       
-        
-    }
-    .book-now{
-        width: 300px;
         flex-direction: column;
         margin: auto;
-      
+        padding: auto;
+    }
+    .car-info img{
+     width: 350px;
+    }
+    .book-now{
+        flex-direction: column;
+        padding-right: 70px;
     }
     .logo{
-        width: 320px;
+        
         flex-direction: column;
         gap: 50px;
     }
     .footer-container{
-        width: 350px;
+       
         flex-direction: column;
         margin: auto;
         padding: auto;
@@ -480,9 +534,65 @@ h3{
         align-items: center;
     }
     .footer-items{
-        width: 350px;
+       
         flex-direction: column;
         margin: auto;
         align-items: center;
     }
+    .testimonial-section{
+     margin-top: 20px;
+     margin-bottom: 20px;
+    }
+    .card-item{
+        display: flex;
+        flex-direction: column;
+        transform: translateX(-28px);
+        gap: 15px;
+    }
 }
+
+@media (min-width: 720px) and (max-width: 981px) {
+    body{
+        width: 970px;
+        margin: auto;
+        padding: auto;
+    }
+    .banner img{
+        width: 350px;
+    }
+    .car-section{
+        margin-bottom: 60px;
+    }
+   .booking-section{
+    transform: translateY(40px);
+   }
+    .car-details p{
+        transform: translateY(65px);
+    }
+    .car-details h2{
+        transform: translateY(65px);
+    }
+    .slider-container{
+       margin-top: 30px;
+    }
+    .slider-container img{
+        width: 100px;
+      }
+   
+    .car-info{
+        margin: auto;
+        padding: auto;
+    }
+    .car-info img{
+     width: 350px;
+    }
+    .book-now{
+     width: 965px;
+    }
+
+    .card-item{
+        display: flex;
+    }
+   
+  }
+  
