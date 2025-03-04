@@ -539,6 +539,12 @@ h3{
         margin: auto;
         align-items: center;
     }
+    .input-btn{
+        position: absolute;
+        top: 18%;
+        transform: translateY(-50%);
+        transform: translateX(22px);
+    }
     .testimonial-section{
      margin-top: 20px;
      margin-bottom: 20px;
@@ -551,14 +557,14 @@ h3{
     }
 }
 
-@media (min-width: 720px) and (max-width: 981px) {
+@media (min-width: 721px) and (max-width: 981px) {
     body{
         width: 970px;
         margin: auto;
         padding: auto;
     }
     .banner img{
-        width: 350px;
+        width: 750px;
     }
     .car-section{
         margin-bottom: 60px;
